@@ -1,6 +1,9 @@
 {
   "name": "fcc-learn-node-with-express",
+  "author": "Leonardo",
   "version": "0.1.0",
+  "description": "A node.js express project",
+  "keywords": ["node.js", "express", "project"],
   "dependencies": {
     "body-parser": "^1.15.2",
     "cookie-parser": "^1.4.3",
@@ -11,5 +14,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Leonardo14406/SoloDeving.git"
   }
 }
