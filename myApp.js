@@ -7,14 +7,19 @@ console.log("Hello World");
 
 const absolutePath = __dirname + `/views/index.html`;
 
-const response = "Hello json".toUpperCase();
+
 app.use("/public", express.static(__dirname + "/public"));
 
+app.get('/', function(req, res) {
+    res.sendFile(absolutePath);
+})
+
 app.get('/json', function(req, res) {
+    const response = "Hello json"
    if (process.env.MESSAGE_STYLE  === "uppercase") {
-        res.json({ "message": response });
+        res.json({ "message": response.toUpperCase() });
    } else {
-    res.json("Hello json");
+    res.json({ "message": response });
    }
   })
  
