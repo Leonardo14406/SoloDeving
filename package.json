@@ -3,8 +3,13 @@
 	"version": "1.2.0",
 	"author": "Leonardo",
 	"description": "This is an awesome project to enhanced my backend development skills",
-	"keywords": ["freecodecamp", "skills", "project"],
+	"keywords": [
+		"freecodecamp",
+		"skills",
+		"project"
+	],
 	"dependencies": {
+		"@freecodecamp/example": "^2.0.0",
 		"express": "^4.14.0"
 	},
 	"main": "server.js",
