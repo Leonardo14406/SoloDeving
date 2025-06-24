@@ -7,21 +7,21 @@ console.log("Hello World");
 
 const absolutePath = __dirname + `/views/index.html`;
 
-
+// Serve static files
 app.use("/public", express.static(__dirname + "/public"));
-
+//Serve html file
 app.get('/', function(req, res) {
     res.sendFile(absolutePath);
 })
-
+//serve json
 app.get('/json', function(req, res) {
-    const response = "Hello json"
    if (process.env.MESSAGE_STYLE  === "uppercase") {
-        res.json({ "message": response.toUpperCase() });
+        res.json({ "message": "Hello json".toUpperCase() });
    } else {
-    res.json({ "message": response });
+    res.json({ "message": "Hello json" });
    }
   })
+  module.exports = app;
  
 
 
