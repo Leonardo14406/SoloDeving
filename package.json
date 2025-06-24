@@ -1,5 +1,6 @@
 {
 	"name": "fcc-learn-npm-package-json",
+	"version": "1.2.0",
 	"author": "Leonardo",
 	"description": "This is an awesome project to enhanced my backend development skills",
 	"keywords": ["freecodecamp", "skills", "project"],
