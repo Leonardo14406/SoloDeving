@@ -12,13 +12,13 @@ app.use("/public", express.static(__dirname + "/public"));
 app.get('/', (req, res) => {
     res.sendFile(absolutePath);
 })
+let message = "Hello json";
 //serve json file
 app.get('/json', (req, res) => {
-     let message = "Hello json"
    if (process.env.MESSAGE_STYLE === "uppercase") {
-        message = message.toUpperCase();
+        res.json({"message": "HELLO JSON"});
    } 
-    res.json({message: message});
+    res.json({"message": message});
   });
   module.exports = app;
  
